@@ -54,14 +54,22 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   width: 30px;
+  height: 28px;
+  min-height: 28px;
   padding-right: 0;
   padding-left: 0;
   color: #57606a;
+  line-height: 1;
+  vertical-align: middle;
 }
 
 .github-pages-detector-copy svg {
   display: block;
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
 }
 
 .github-pages-detector-copy-done {

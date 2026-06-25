@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHub Pages Detector</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --text: #24292f;
+        --muted: #57606a;
+        --border: #d0d7de;
+        --accent: #2da44e;
+        --surface: #f6f8fa;
+      }
+
+      body {
+        margin: 0;
+        color: var(--text);
+        background: #ffffff;
+        font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      main {
+        box-sizing: border-box;
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 56px 24px;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(32px, 6vw, 56px);
+        line-height: 1.05;
+        letter-spacing: 0;
+      }
+
+      p {
+        max-width: 660px;
+        margin: 0 0 24px;
+        color: var(--muted);
+        font-size: 18px;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 32px;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 0 14px;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        color: var(--text);
+        background: var(--surface);
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .button.primary {
+        border-color: rgba(45, 164, 78, 0.35);
+        color: #ffffff;
+        background: var(--accent);
+      }
+
+      img {
+        display: block;
+        box-sizing: border-box;
+        width: min(100%, 720px);
+        height: auto;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>GitHub Pages Detector</h1>
+      <p>A Chrome extension that detects GitHub Pages on repository pages, shows status inline, and lets you open or copy the Pages URL.</p>
+      <nav aria-label="Project links">
+        <a class="button primary" href="https://github.com/holynova/github-pages-detector-extension">GitHub Repo</a>
+        <a class="button" href="https://holynova.github.io/github-pages-detector-extension/">GitHub Pages</a>
+      </nav>
+      <img src="assets/screenshot.png" alt="GitHub Pages Detector button on a GitHub repository page">
+    </main>
+  </body>
+</html>
