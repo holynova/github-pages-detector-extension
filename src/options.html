@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHub Pages Detector Options</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main>
+      <h1>GitHub Pages Detector</h1>
+      <label for="github-token">GitHub token</label>
+      <input id="github-token" type="password" autocomplete="off" placeholder="Optional token for private repositories">
+      <p>
+        A token is optional for public repositories. Add a fine-grained token with repository metadata access
+        when you want accurate GitHub Pages API checks for private repositories.
+      </p>
+      <button id="save-token" type="button">Save</button>
+      <span id="status" role="status"></span>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>
