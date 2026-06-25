@@ -3,7 +3,7 @@
   "name": "GitHub Pages Detector",
   "version": "0.1.0",
   "description": "Detects GitHub Pages for the current GitHub repository and adds a quick open button.",
-  "permissions": ["storage", "tabs"],
+  "permissions": ["storage"],
   "host_permissions": [
     "https://github.com/*",
     "https://api.github.com/*",
