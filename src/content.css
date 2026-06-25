@@ -1,9 +1,27 @@
-.github-pages-detector-button {
+.github-pages-detector-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   margin-left: 8px;
   white-space: nowrap;
 }
 
-.github-pages-detector-button::before {
+.github-pages-detector-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 9px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  color: #57606a;
+  background: #f6f8fa;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.github-pages-detector-label::before,
+.github-pages-detector-open::before {
   content: "";
   display: inline-block;
   width: 8px;
@@ -12,4 +30,42 @@
   border-radius: 50%;
   background: #2da44e;
   vertical-align: 1px;
+}
+
+.github-pages-detector-status-checking .github-pages-detector-label::before {
+  background: #bf8700;
+  box-shadow: 0 0 0 2px rgba(191, 135, 0, 0.15);
+}
+
+.github-pages-detector-status-not-found .github-pages-detector-label::before {
+  background: #8c959f;
+}
+
+.github-pages-detector-status-error .github-pages-detector-label::before {
+  background: #cf222e;
+}
+
+.github-pages-detector-open,
+.github-pages-detector-copy {
+  white-space: nowrap;
+}
+
+.github-pages-detector-copy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  padding-right: 0;
+  padding-left: 0;
+  color: #57606a;
+}
+
+.github-pages-detector-copy svg {
+  display: block;
+}
+
+.github-pages-detector-copy-done {
+  color: #2da44e;
+  border-color: rgba(45, 164, 78, 0.45);
+  background: #dafbe1;
 }

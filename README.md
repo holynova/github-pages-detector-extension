@@ -9,7 +9,9 @@ Chrome extension that detects whether the current GitHub repository has GitHub P
 - If the API is unavailable, rate-limited, or unauthenticated, checks the inferred Pages URL:
   - `https://owner.github.io/repo/`
   - `https://owner.github.io/` for repositories named `owner.github.io`
+- Shows a repository-title status while checking, when Pages exists, and when Pages is not found.
 - Adds a `GitHub Pages` button beside the repository title when Pages exists.
+- Adds a copy icon beside the button to copy the detected GitHub Pages URL.
 - Updates the extension toolbar icon state with a green `ON` badge when Pages exists.
 
 ## Private repositories
