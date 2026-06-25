@@ -55,21 +55,16 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 30px;
+  min-width: 48px;
   height: 28px;
   min-height: 28px;
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: 10px;
+  padding-left: 10px;
   color: #57606a;
-  line-height: 1;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 28px;
   vertical-align: middle;
-}
-
-.github-pages-detector-copy svg {
-  display: block;
-  flex: 0 0 auto;
-  width: 16px;
-  height: 16px;
 }
 
 .github-pages-detector-copy-done {
